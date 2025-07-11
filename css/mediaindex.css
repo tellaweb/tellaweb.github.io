@@ -1,0 +1,98 @@
+@media (max-width: 1000px) {
+
+    #menuhamburguesa {
+        width: 40%;
+        font-size: 2rem;
+        display: block;
+        float: left;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        position: absolute;
+
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    #img1 {
+        float: right;
+
+    }
+
+
+    nav {
+        width: 86%;
+        display: none;
+    }
+
+    header {
+        width: 100%;
+        height: 4rem;
+        position: static;
+    }
+
+    nav div {
+        width: 20%;
+        float: right;
+        text-align: center;
+        line-height: 1.6em;
+        font-size: 0.8em;
+        border: 0.125em solid grey;
+        color: azure;
+        background-color: #0a7bb2;
+        padding: 0.125em 0.25em 0.3125em 0em;
+    }
+
+    footer {
+        width: 100%;
+        height: auto;
+        background-color: #0a7bb2;
+        color: white;
+
+    }
+
+    .final {
+        width: 25%;
+        height: auto;
+        line-height: 10em;
+        margin-bottom: 0;
+        font-size: 0.25em;
+        text-align: center;
+    }
+    p, .quitarpunto {
+        font-size: 1.5rem;
+    }
+    .pie {
+        width: 15%;
+        height: 3em;
+    }
+
+    #Infotaller {
+        font-size: 1.5rem;
+    }
+
+    #acerca de {
+        margin-top: 2rem;
+    }
+
+    .tama {
+        font-size: 0.85em;
+    }
+
+    img {
+        width: 70%;
+    }
+    .titulo {
+        font-size: 2em;
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    #menuhamburguesa,
+    #menuhamburguesa ul {
+        width: 100%;
+    }
+
+}
