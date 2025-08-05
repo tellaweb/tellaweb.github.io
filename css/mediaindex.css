@@ -15,6 +15,26 @@
     h1 {
         font-size: 1.2em;
     }
+    /* Modificado tamaño de texto el 5 de agosto de 2025 por Emilio */
+    h2 { 
+        font-size: 0.8em;
+    }
+    /* Modificado tamaño de texto el 5 de agosto de 2025 por Emilio */
+    summary {
+        font-size: 1.2em;
+    }
+    /* Modificado tamaño de texto el 5 de agosto de 2025 por Emilio */
+    .rojo {
+        font-size: 0.8em;
+    }
+    /* Modificado tamaño de texto el 5 de agosto de 2025 por Emilio */
+    li {
+        font-size: 0.8em;
+    }
+    /* Modificado tamaño de texto el 5 de agosto de 2025 por Emilio */
+    main p {
+        font-size 0.8em; 
+    }
     #img1 {
         float: right;
 
@@ -67,9 +87,9 @@
         width: 15%;
         height: 3em;
     }
-
+/* Modificado tamaño de texto el 5 de agosto de 2025 por Emilio */
     #Infotaller {
-        font-size: 1.5rem;
+        font-size: 0.8em;
     }
 
     #acerca de {
@@ -98,3 +118,4 @@
 
 
 }
+
