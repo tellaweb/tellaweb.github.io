@@ -11,8 +11,9 @@
         position: absolute;
 
     }
+    /* Modificado tamaño de texto el 5 de agosto de 2025 por Emilio */
     h1 {
-        font-size: 2rem;
+        font-size: 1.2em;
     }
     #img1 {
         float: right;
@@ -94,5 +95,6 @@
     #menuhamburguesa ul {
         width: 100%;
     }
+
 
 }
