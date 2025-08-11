@@ -1,0 +1,120 @@
+h1 {
+    width: 100%;
+    height: 2em;
+    line-height: 2em;
+    font-size: 3vw;
+    background-color: green;
+    color: white;
+    text-align: center;
+}
+body>figure {
+    width: 100%;
+    height: 35vw;
+    background-image: url(../IMG/Periodico.png);
+    background-size: cover;
+    background-position: center;
+}
+main {
+    width: 100%;
+    height: auto;   
+}
+main div{
+    width: 45%;
+    margin: 2%;
+    float: left;
+}
+main div section{  
+    width: 95%;
+    background-color: wheat;
+    margin: 5% 2%;
+    padding: 2%; 
+}
+main div section ul li{
+    margin-left: 5%;
+    font-size: large;
+}
+main div section ul {
+    font-size: large;
+    padding-bottom: 1%;
+}
+main div section h2, main div section h3, main div section h4{
+    margin: 1%;
+}
+p{
+    font-size: large;
+    line-height: 1.3em;
+}
+main figure img{
+    width: 100%;
+}
+section p img{
+    width: 100%;
+    margin-top: 1%;
+}
+article p, section p {
+    padding: 1% 0%;
+}
+#menu {
+    height: 3em;
+    line-height: 1em;
+    margin-bottom: 1em;
+}  
+   .desplegado {
+       display: none;
+   }
+
+   .leerMenos {
+       display: none;
+       cursor: pointer;
+   }
+
+   .leerMas {
+       cursor: pointer;
+   }
+  /* Aquí configuramos las versiones para tablet y luego para móvil haciendo que se coloque todo verticalmente */
+@media(max-width:1050px) {
+    main div {
+        width: 75%;
+        font-size: medium;
+    }
+    #menu {
+        width: 100%;
+        display: block;
+        height: 2rem;
+    }
+    #menu ul {
+        width: 100%;
+    }
+    #menu ul li a {
+        font-size: large;
+    }
+    nav {
+        display: none;
+    }
+    #rrcontent {
+        justify-content: flex-end;
+    }
+    .rritem {
+        width: 6%;
+    }
+    footer p {
+        font-size: smaller;
+    }
+    #accesibilidad {
+        width: 5rem;
+    }
+    main div{
+        width: 95%;
+    }
+    /*quitamos el espacio entre los dos div*/
+    .marginredux{
+        margin-bottom: 0;
+    }
+
+    @media(max-width:750px) {
+        main div{
+            width: 100%;
+            margin: 0;
+        }
+    }
+}

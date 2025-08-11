@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HuertosNoticias</title>
+    <link rel="stylesheet" href="../CSS/hamburguesa.css">
+    <link rel="stylesheet" href="../CSS/general.css">
+    <link rel="stylesheet" href="../CSS/Material.css">
+</head>
+<body id="conte">
+    <div id="rrcontent"> <!-- Enlaces a redes sociales-->
+        <figure class="rritem"><a href="https://www.facebook.com/CopaeAsturias/#"><img src="../IMG/face.png"
+                    alt="Facebook"></a></figure>
+        <figure class="rritem"><a href="https://www.instagram.com/redhuertoseco/"><img src="../IMG/insta.png"
+                    alt="Instagram"></a></figure>
+        <figure class="rritem"><a href="https://www.youtube.com/channel/UC0lu56DDy68LmGsuYP8skzg"><img
+                    src="../IMG/youtube.png" alt="Youtube"></a></figure>
+        <figure class="rritem"><a href="https://x.com/CopaeAsturias?lang=es"><img src="../IMG/twitter.png"
+                    alt="twitter"></a></figure>
+    </div>
+    <div id="menu"> <!-- Cabecera modo hamburguesa para versión móvil-->
+        <strong id="menuH">&#9776;</strong>
+        <ul id="ocultarMenu">
+            <li><a href="../INDEX/Index.html">INICIO</a></li>
+            <li><a href="../INDEX/NoticiasHuertos.html">NOTICIAS</a></li>
+            <li><a href="../INDEX/MapaHuertos.html">MAPA</a></li>
+            <li><a href="../INDEX/ContactoHuertos.html">CONTACTO</a></li>
+            <li id="submenuH"><a href="#null">ACTIVIDADES</a>
+                <ul id="ocultarSubMenu">
+                    <li><a href="../INDEX/Material.html">Material</a></li>
+                    <li><a href="#null">Banco de semillas</a></li>
+                    <li><a href="../INDEX/documental.html">Documental</a></li>
+                    <li><a href="../INDEX/Premios.html">Premios</a></li>
+                    <li><a href="../INDEX/juegos.html">Juegos</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <nav> <!-- Cabecera clásica para versión sobremesa-->
+        <ul>
+            <li><a href="../INDEX/Index.html">INICIO</a></li>
+            <li><a href="../INDEX/NoticiasHuertos.html">NOTICIAS</a></li>
+            <li><a href="../INDEX/MapaHuertos.html">MAPA</a></li>
+            <li><a href="../INDEX/ContactoHuertos.html">CONTACTO</a></li>
+            <li><a href="#null">ACTIVIDADES</a>
+                <ul>
+                    <li><a href="../INDEX/Material.html">Material</a></li>
+                    <li><a href="#null">Banco de semillas</a></li>
+                    <li><a href="../INDEX/documental.html">Documental</a></li>
+                    <li><a href="../INDEX/Premios.html">Premios</a></li>
+                    <li><a href="../INDEX/juegos.html">Juegos</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <figure> </figure> <!-- Contiene la imagen de portada -->
+    <h1>Red de Huertos Escolares Ecol&oacute;gicos Caja Rural de Asturias</h1>
+    <main>
+        <figure ><a target="_blank" href="../REVISTA-MAQUETA-AST.pdf"><img class="baja" src="../IMG/Material.PNG" alt="guia"></a></figure>          
+        <figure><a target="_blank" href="../COPAEdiseñoGRAF.pdf"><img src="../IMG/EtiquetadoEco.PNG" alt="etiquetado"></a></figure>
+        <figure><img style="cursor: pointer;" src="../IMG/Programa Comedores Escolares Asturias_peq.jpg" alt="eti" onclick="verEnPantallaCompleta(this)"></figure>
+    </main>
+    <footer>
+        <img class="copae" src="../IMG/LogCOPAE0610/COPAE.jpg" alt="copae">
+        <img src="../IMG/LogCOPAE0610/Castellano-horizontal-full-color.png" alt="prinAST">
+        <img src="../IMG/LogCOPAE0610/Caja Rural de Asturias.jpg" alt="cajar">
+        <img src="../IMG/LogCOPAE0610/logo comedores escolares.jpg" alt="come">
+        <img src="../IMG/UE_Hoja.jpg" alt="UE">
+        <p>Consejo de la Producción Agraria Ecológica del Principado de Asturias (COPAE)</p>
+        <p><a href="AvisoLegal.html">Aviso legal</a> | <a href="Privacidad.html">Política de privacidad</a> | <a href="Cookies.html">Política de cookies</a></p>
+        <img id="accesibilidad" src="../IMG/wcag2AAA.png" alt="Icono de conformidad con el Nivel Triple-A, 
+                	de las Directrices de Accesibilidad para el 
+                	Contenido Web 1.0 del W3C-WAI">
+    </footer>
+    <script src="../JS/hamburguesa.js"></script>
+    <script>
+        function verEnPantallaCompleta(elemento) {
+            if (elemento.requestFullscreen) {
+                elemento.requestFullscreen();
+            }
+            else elemento.close();
+         }
+    </script>
+</body>
+</html>

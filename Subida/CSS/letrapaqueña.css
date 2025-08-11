@@ -1,0 +1,208 @@
+ #conte {
+     width: 90%;
+     margin: auto;
+ }
+ /*Metemos este contenedor para poner el margen a la página y trabajar a partir de aquí con el 100% ancho */
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+::selection {
+    background-color: #8fb945;
+    }
+/* Desde aquí configuramos los iconos de RRSS */
+ #rrcontent {
+     width: 100%;
+     margin: auto;
+     display: flex;
+     justify-content: flex-start;
+     float: none;
+     height: auto;
+     line-height: 2rem;
+     margin-top: 2rem;
+ }
+
+ .rritem {
+     width: 3%;
+     height: auto;
+ }
+
+ div figure img {
+     width: 87%;
+     height: auto;
+ }
+/* Fin de configuración enlaces RRSS */
+
+nav {
+    width: 100%;
+    height: 4rem;
+    line-height: 4rem;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+nav ul {
+    width: 100%;
+    height: 4rem;
+    line-height: 4rem;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: green;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+nav ul li a:hover {
+    background-color: #76bc21;    
+}
+
+nav ul li {
+    width: 100%;
+    text-align: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+nav ul li {
+    color: white;
+}
+nav ul li ul {
+    display: none;
+}
+
+nav ul li:hover ul {
+    display: block;
+    position: relative;
+}
+
+nav ul li ul li {
+    background-color: green;
+}
+nav span {
+    visibility: hidden;
+}
+nav a {
+    display: block;
+    width: 100%;
+}
+
+ h1 {
+     color: green;
+     margin: 1%;
+     font-size: 3em;
+     font-style: italic;
+     text-align: center;
+ }
+ #menu {
+     display: none;
+     margin: 0;
+ }
+ p{
+    margin-bottom: 1%;
+ }
+ p a{
+    color: green;
+ }
+ h2,h3{
+    margin: 0.5%;
+ }
+ p ul{
+    padding-left: 1%;
+ }
+ table{
+    border-collapse: collapse;
+    text-align: center;
+    margin: 1%;
+ }
+ td,th{
+    border-top: solid black .1em;
+    width: 10em;
+    height: 2em;
+ }
+ .trdcha{
+    width: 20em;
+ }
+ .sinborde{
+    border-right: hidden;
+ }
+  footer {
+     clear: both;
+     text-align: center;
+ }
+ footer img {
+     width: 8%;
+     margin: 1% 2%;
+ }
+
+ footer p {
+     word-spacing: 0.1em;
+     letter-spacing: 0.05em;
+     margin: 0.5%;
+ }
+
+ footer a {
+     color: black;
+ }
+
+ footer figure img {
+     margin: 0.5%;
+ }
+ .copae {
+     width: 6%;
+ }
+ input[type="submit"] {
+     width: 20%;
+     height: 3em;
+     background-color: green;
+     border-radius: 20px;
+     border: none;
+ }
+
+ @media(max-width:1050px) {
+     #menu {
+         width: 100%;
+         display: block;
+         height: 4rem;
+     }
+
+     #menu ul {
+         width: 100%;
+     }
+
+     #menu ul li a {
+         font-size: large;
+     }
+
+     nav {
+         display: none;
+     }
+
+     #rrcontent {
+         justify-content: flex-end;
+     }
+
+     .rritem {
+         width: 6%;
+     }
+
+     li:hover ul {
+         background-color: whitesmoke;
+     }
+
+     h1 {
+         font-size: 4.5vw;
+         clear: both;
+     }
+
+     footer p {
+         font-size: smaller;
+         word-spacing: 0em;
+         letter-spacing: 0em;
+     }
+    #accesibilidad {
+        width: 5rem;
+    }
+ }

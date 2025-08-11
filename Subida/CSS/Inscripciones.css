@@ -1,0 +1,209 @@
+#conte {
+    width: 80%;
+    margin: auto;
+}
+
+* {
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+::selection {
+    background-color: #8fb945;
+}
+
+/* Desde aquí configuramos los iconos de RRSS */
+#rrcontent {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    height: auto;
+    line-height: 2rem;
+    margin-top: 2rem;
+}
+
+.rritem {
+    width: 3%;
+    height: auto;
+    background: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+div figure img {
+    width: 87%;
+    height: auto;
+}
+/* Fin de configuración enlaces RRSS */
+
+nav {
+    width: 100%;
+    height: 4rem;
+    line-height: 4rem;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+nav ul {
+    width: 100%;
+    height: 4rem;
+    line-height: 4rem;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: green;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+nav ul li a:hover {
+    background-color: #9ab942;
+}
+
+nav ul li {
+    width: 100%;
+    text-align: center;
+}
+
+nav ul li {
+    color: white;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li ul {
+    display: none;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    background-color: green;
+}
+
+nav a {
+    display: block;
+    width: 100%;
+}
+
+nav span {
+    visibility: hidden;
+}
+
+main a {
+    color: green;
+}
+
+h1 {
+    width: 100%;
+    height: 2em;
+    line-height: 2em;
+    font-size: 3vw;
+    color: black;
+    text-align: center;
+    margin: auto;
+    margin-top: -7rem;
+    margin-bottom: 0rem;
+}
+
+main {
+    width: 100%;
+    height: 52rem;
+    margin: auto;
+    margin-top: 7rem;
+    background-image: url(../IMG/dib1blanqueado.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: 8%;
+}
+
+h2 {
+    color: black;
+}
+
+article {
+    width: 50%;
+    height: auto;
+    margin-left: 3rem;
+}
+
+article, h2, p {
+    text-indent: 1rem;
+    font-size: x-large;
+    margin-top: 1.25rem;
+    text-align: left;
+}
+
+h2, p {
+    width: 100%;
+}
+
+.separarp {
+    margin-top: 2em;
+}
+
+#articulo1 {
+    float: left;
+    margin-top: 2rem;
+}
+
+figure {
+    width: 28%;
+    height: 20rem;
+    background-image: url(../IMG/LOGOTIPO_RED_HUERTO.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0%;
+    padding: 2%;
+    float: left;
+    margin-left: 10rem;
+    margin-top: 6rem;
+}
+
+footer {
+    clear: both;
+}
+
+footer img {
+    width: 8%;
+    margin: 2%;
+}
+
+footer p {
+    word-spacing: 0.1em;
+    letter-spacing: 0.05em;
+    text-align: center;
+    font-size: medium;
+    margin: 0;
+}
+footer a {
+    color: black;
+}
+
+#menu {
+    display: none;
+}
+
+@media(max-width:1800px) {
+    main {
+        background-size: cover;
+    }
+
+    article {
+        width: 75%;
+    }
+
+    figure {
+        height: 4rem;
+        margin: 2em 6em;
+    }
+    #accesibilidad {
+        width: 5rem;
+    }
+}
