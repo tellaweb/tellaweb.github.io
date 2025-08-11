@@ -67,6 +67,7 @@
   padding: 0 20px;        /* margen lateral */
   gap: 10px;
   z-index: 9999;
+  flex-direction: column;
 }
 
 #touch-controls .btn.control {
@@ -279,4 +280,5 @@
   
   
   
+
 
