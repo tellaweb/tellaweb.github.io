@@ -71,8 +71,8 @@
 }
 
 #touch-controls .btn.control {
-  width: 50px;
-  height: 50px;
+  width: 200px;
+  height: 200px;
   font-size: 24px;
   background: rgba(255,255,255,0.8);
   border: none;
@@ -280,5 +280,6 @@
   
   
   
+
 
 
