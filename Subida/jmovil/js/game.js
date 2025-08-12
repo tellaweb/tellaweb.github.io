@@ -73,8 +73,10 @@
 #touch-controls .btn.control {
   width: 200px;
   height: 200px;
-  font-size: 24px;
+  font-size: 96px;
   background: rgba(255,255,255,0.8);
+  background-color: gray;
+  color: white;
   border: none;
   border-radius: 8px;
   touch-action: none;
@@ -280,6 +282,7 @@
   
   
   
+
 
 
 
