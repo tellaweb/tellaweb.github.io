@@ -71,7 +71,6 @@
     .final {
         width: 25%;
         height: auto;
-        line-height: 10em;
         margin-bottom: 0;
         font-size: 0.25em;
         text-align: center;
@@ -102,7 +101,6 @@
     .titulo {
         font-size: 2em;
     }
-
 }
 
 @media (max-width: 1000px) {
