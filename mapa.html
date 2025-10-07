@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Web</title>
+</head>
+<link rel="stylesheet" href="Estilo.css">
+
+<style>
+
+    ul {
+    /* Esto define el tipo de viñeta */
+        list-style-type: disc;
+    /* Espacio para que se vea la viñeta */
+        margin-left: 20px;
+        margin: auto;
+        width: 44%;
+    }
+    main p {
+        color: black;
+    }
+    .mapa {
+        margin-left: 6%;
+        margin-bottom: 2rem;
+        width: 20%;
+    }
+    .flexionado {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .titulo {
+        font-size: 22px;
+        text-shadow: 2px 2px 4px;
+        color: rgba(10, 123, 178, 0.85);
+        text-decoration: none;
+    }
+
+    @media (max-width: 1000px) {
+        .mapa {
+            width: 60%;
+            margin-top: 6%;
+            margin-left: 20%;
+        }
+        .flexionado {
+            flex-wrap: wrap;
+        }
+        ul {
+            margin-top: 6%;
+        }
+    }
+</style>
+
+<!-- Barra superior -->
+<div class="topbar">
+    <div class="info-contacto">
+        <div class="topbar">
+            <span class="icono-maps">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="white"
+                    stroke="black" stroke-width="1.2">
+                    <path
+                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                </svg>
+            </span>
+            <span>Llanera, Asturias</span>
+        </div>
+        <span>✉️ templeoweb2425@gmail.com</span>
+
+    </div>
+
+</div>
+
+<!-- Barra inferior / navegación -->
+<header class="main-header">
+    <div class="brand">
+        <button class="hamburger" aria-label="Menú">☰</button>
+        <figure id="img1">
+            <img src="Fotos/Logo.jpg" alt="logo taller empleo">
+        </figure>
+        <h1>"Llanera 2024-2025"</h1>
+    </div>
+    <nav class="primary" id="menu">
+        <a href="index.html" class="btn-ancla">Inicio</a>
+        <a href="index.html#certificados">Certificados</a>
+        <a href="index.html#modulos-lineales" class="btn-ancla">Orientación</a>
+        <a href="index.html#actividades-formativas" class="btn-ancla">Obra</a>
+        <a href="index.html#instalaciones-formativas" class="btn-ancla">Instalaciones</a>
+
+    </nav>
+</header>
+
+<body> 
+
+    <main>
+    <h2 id="mapaweb"> MAPA DEL SITIO WEB</h2>
+    <div class="flexionado">
+    <img src="Fotos/TalleresEmpleo.jpg" alt="taller" class="mapa">
+    <ul>
+        <li><a href="index.html" class="titulo">Inicio</a></li>
+        <p> - Página Principal de la Web</p>
+        <li><a href="index.html#certificados" class="titulo">Certificados</a></li><p> - Datos generales sobre los certificados</p>
+        <li><a href="index.html#modulos-lineales" class="titulo">Orientación</a></li>
+        <p> - Detalle sobre los módulos que componen el certificado</p>
+        <li><a href="index.html#actividades-formativas" class="titulo">Obra</a></li><p> - Visitas a las que acudió el alumnado</p>
+        <li><a href="index.html#instalaciones-formativas" class="titulo">Instalaciones</a></li><p> - Instalaciones con las que cuenta el centro</p>
+        
+    </ul>
+    </div>
+    </main>
+
+    <!-- Aquí comienza el footer -->
+    
+    <footer class="footer-final animado">
+        <div class="footer-contenido">
+            <div class="logos-footer">
+                <img src="Fotos/logotipos_pie_pagina.png" alt="Logo institucional 1">
+            </div>
+    
+            <div class="info-footer">
+                <p>T. E. "Llanera 2024–2025"</p>
+                <p>Accesibilidad WCAG 2.0 AA</p>
+                <p><a href="mapa.html">Mapa Web</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/modulos.js"></script>
+
+</body>
+</html>
