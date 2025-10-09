@@ -22,7 +22,7 @@
         font-size: large;
     } 
         #ocultarMenu {
-            width: 1050px;
+            
             position: relative;
             top: 64px;
             left: -43px;
@@ -33,9 +33,9 @@
         }
     
         #ocultarMenu li {
-            width: 300%;
-        } */
-    
+            width: 999%;
+        } 
+    */
     
 
     #rrcontent {
