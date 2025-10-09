@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Juego de Preguntas</title>
+        <link rel="stylesheet" href="../CSS/hamburguesa.css">
+        <link rel="stylesheet" href="../CSS/general.css">
+        <link rel="stylesheet" href="../CSS/estilosMedia.css">
+        
+    <style>
+        /* body {
+            margin: 0;
+            background: whitesmoke;
+            overflow: hidden;
+        } */
+
+        #gameContainer {
+            position: relative;
+            width: 800px;
+            height: 450px;
+            margin: 0 auto;
+        }
+
+        canvas {
+            display: block;
+            background: #111;
+        }
+
+        #scoreHUD {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: white;
+            font-family: sans-serif;
+            font-size: 16px;
+            z-index: 5;
+        }
+
+        #quizOverlay {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 10;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            font-family: sans-serif;
+        }
+
+        #quizOverlay #quizOptions button {
+            padding: 8px 12px;
+            font-size: 14px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        #gameOver {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 20;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            font-family: sans-serif;
+        }
+
+        #gameOver button {
+            padding: 8px 16px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body id="conte">
+    <div class="fijo">
+        <div>
+            <div id="rrcontent"> <!-- Enlaces a redes sociales-->
+    
+                <div id="menu"> <!-- Cabecera modo hamburguesa para versión móvil-->
+                    <strong id="menuH">&#9776;</strong>
+                    <ul id="ocultarMenu">
+                        <li><a href="../INDEX/Index.html">INICIO</a></li>
+                        <li><a href="../INDEX/NoticiasHuertos.html">NOTICIAS</a></li>
+                        <li><a href="../INDEX/MapaHuertos.html">MAPA</a></li>
+                        <li><a href="../INDEX/ContactoHuertos.html">CONTACTO</a></li>
+                        <li id="submenuH"><a href="#null">ACTIVIDADES</a>
+                            <ul id="ocultarSubMenu">
+                                <li><a href="../INDEX/Material.html">Material</a></li>
+                                <li><a href="#null">Banco de semillas</a></li>
+                                <li><a href="../INDEX/documental.html">Documental</a></li>
+                                <li><a href="../INDEX/Premios.html">Premios</a></li>
+                                <li><a href="../INDEX/juegos.html">Juegos</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="bloquelogos">
+                    <figure class="rritem"><a href="https://www.facebook.com/CopaeAsturias/"><img src="../IMG/face.png"
+                                alt="Facebook" class="logosrs"></a></figure>
+                    <figure class="rritem"><a href="https://www.instagram.com/redhuertoseco/"><img src="../IMG/insta.png"
+                                alt="Instagram" class="logosrs"></a></figure>
+                    <figure class="rritem"><a href="https://www.youtube.com/channel/UC0lu56DDy68LmGsuYP8skzg"><img
+                                src="../IMG/youtube.png" alt="Youtube" class="logosrs"></a></figure>
+                    <figure class="rritem"><a href="https://x.com/CopaeAsturias?lang=es"><img src="../IMG/twitter.png"
+                                alt="twitter" class="logosrs"></a></figure>
+    
+                    <figure id="inscrip">
+                        <a href="../INDEX/Index.html#inscri"><img src="../IMG/inscri4.png" alt="" id="inscripimg"></a>
+                        <a href="../INDEX/Index.html#inscri"><img src="../IMG/inscridef.png" alt="" id="inscripimg2"></a>
+                    </figure>
+                </div>
+    
+            </div>
+    
+        </div>
+    
+        <nav> <!-- Cabecera clásica para versión sobremesa-->
+            <ul>
+                <li><a href="../INDEX/Index.html">INICIO</a></li>
+                <li><a href="../INDEX/NoticiasHuertos.html">NOTICIAS</a></li>
+                <li><a href="../INDEX/MapaHuertos.html">MAPA</a></li>
+                <li><a href="../INDEX/ContactoHuertos.html">CONTACTO</a></li>
+                <li><a href="#null">ACTIVIDADES</a>
+                    <ul>
+                        <li><a href="../INDEX/Material.html">Material</a></li>
+                        <li><a href="#null">Banco de semillas</a></li>
+                        <li><a href="../INDEX/documental.html">Documental</a></li>
+                        <li><a href="../INDEX/Premios.html">Premios</a></li>
+                        <li><a href="../INDEX/juegos.html">Juegos</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div id="gameContainer">
+        <canvas id="gameCanvas" width="800" height="450"></canvas>
+        <div id="scoreHUD">Puntos: 0</div>
+
+        <!-- Pantalla de Game Over -->
+        <div id="gameOver" class="game-over-box">
+            <div style="font-size:24px; margin-bottom:10px">Game Over</div>
+            <div id="finalScore" style="font-size:18px; margin-bottom:20px"></div>
+            <button onclick="location.reload()">Reiniciar</button>
+        </div>
+    </div>
+
+<footer>
+    <img class="copae" src="../IMG/LogCOPAE0610/COPAEredux.jpg" alt="copae">
+    <img src="../IMG/LogCOPAE0610/Castellano-horizontal-full-color.png" alt="prinAST">
+    <img src="../IMG/LogCOPAE0610/Caja Rural de Asturias.jpg" alt="cajar">
+    <img src="../IMG/LogCOPAE0610/logo comedores escolares.jpg" alt="come">
+    <img src="../IMG/UE_Hoja.jpg" alt="UE">
+    <p>Copyright 2025. Consejo De La Producción Agraria Ecológica Del Principado De Asturias (COPAE)</p>
+    <p><a href="AvisoLegal.html">Aviso legal</a> | <a href="Privacidad.html">Política de privacidad</a> | <a
+            href="Cookies.html">Política de cookies</a></p>
+    <figure><img id="accesibilidad" src="../IMG/wcag2AAA.png"
+            alt="Icono de conformidad con el Nivel Triple-A, de las Directrices de Accesibilidad para el Contenido Web 1.0 del W3C-WAI">
+    </figure>
+</footer>
+    <!-- Scripts -->
+    <script src="../JS/hamburguesa.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/tileset.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/icons.js"></script>
+    <script src="js/score.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/game.js"></script>
+</body>
+
+</html>
