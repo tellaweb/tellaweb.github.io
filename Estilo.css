@@ -904,7 +904,7 @@
 
    .nota-legal {
        position: fixed;
-       top: 30px;
+       top: 60px;
        left: 50%;
        transform: translateX(-50%) translateY(20px);
        background-color: var(--nota-bg);
@@ -927,6 +927,7 @@
        opacity: 1;
        transform: translateX(-50%) translateY(0);
        pointer-events: auto;
+       width: 60%;
    }
 
    .cerrar-nota {
@@ -968,6 +969,7 @@
                  font-size: 2.5vw;
           }
    }
+
 
 
 
