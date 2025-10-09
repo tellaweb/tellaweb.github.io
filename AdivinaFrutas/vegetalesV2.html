@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller Empleo</title>
+    <link rel="stylesheet" href="../CSS/hamburguesa.css">
+    <link rel="stylesheet" href="../CSS/general.css">
+    <link rel="stylesheet" href="../CSS/estilosMedia.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+
+    <style>
+            /* CSS */
+.carta {
+  perspective: 1000px; /* Profundidad 3D */
+}
+
+.cartaInterna {
+  width: 450px;
+  height: 350px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  margin: auto;
+}
+
+.anverso {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  backface-visibility: hidden; /* Oculta la cara trasera cuando está girada */
+}
+
+.reverso {
+  transform: rotateY(180deg);
+}
+
+/* Aquí viene lo importante: forzar al <img> a llenar la cara sin salirse */
+.anverso img {
+  display: block;          /* elimina espacios en blanco alrededor */
+  width: 100%;             
+  height: auto;            
+  object-fit: cover;       /* recorta para mantener proporción */
+}
+
+form {
+    width: 80%;
+    height: 45rem;
+    background-color: wheat;
+    margin: auto;
+    margin-top: 5rem;
+    text-align: center;
+    font-family: "Chewy"
+}
+
+#a {
+    width: 28rem;
+    height: 3rem;
+    font-size: 2rem;
+}
+
+label {
+    font-size: 2rem;
+}
+
+#btn {
+    width: 7rem;
+    height: auto;
+    background-color: transparent; 
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin: 2%;
+}
+
+#btn:hover {
+    filter: brightness(125%)
+}
+
+#reini {
+    width: 7rem;
+    height: auto;
+    background-color: transparent; 
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin: 2%;
+}
+
+#reini:hover {
+    filter: brightness(125%)
+}
+
+label {
+    font-weight: bolder;
+}
+
+h1 {
+    font-size: 3rem;
+    padding-top: 1.5rem;
+    color: brown;
+    font-family: "Chewy"
+}
+
+.btnimg {
+    width: 100%;
+}
+
+#conteder {
+    width: 50%;
+    float: left;
+    padding-top: 2rem;
+}
+
+#conteiz {
+    width: 50%;
+    float: left;
+    padding-top: 1rem;
+}
+
+#respu {
+    width: 98%;
+    height: 3rem;
+    line-height: 3rem;
+    border-radius: 0.75rem;
+    letter-spacing: 0.12rem;
+}
+
+#imgint, #imgres {
+    width: 100%;
+    border-radius: 1rem;
+}
+.anverso, .reverso {
+  backface-visibility: hidden;
+}
+.borde {
+    border: solid black 0.125rem;
+}
+@media(max-width:1380px) {
+    #conteiz {
+        float: none;
+        width: 100%;
+    }
+    #conteder {
+        width: 100%;
+    }
+    .cartaInterna {
+        width: 35%;
+    }
+    #btn, #reini {
+        float: left;
+    }
+    #reini {
+        margin-right: 22%;
+    }
+    #intentos {
+        float: left;
+        width: 50%;
+        clear: both;
+    }
+    
+     
+}
+</style>
+</head>
+
+<body id="conte">   
+    <div id="rrcontent"> <!-- Enlaces a redes sociales-->
+        <figure class="rritem"><a href="https://www.facebook.com/CopaeAsturias/"><img src="../IMG/face.png"
+                    alt="Facebook"></a></figure>
+        <figure class="rritem"><a href="https://www.instagram.com/redhuertoseco/"><img src="../IMG/insta.png"
+                    alt="Instagram"></a></figure>
+        <figure class="rritem"><a href="https://www.youtube.com/channel/UC0lu56DDy68LmGsuYP8skzg"><img
+                    src="../IMG/youtube.png" alt="Youtube"></a></figure>
+        <figure class="rritem"><a href="https://x.com/CopaeAsturias?lang=es"><img src="../IMG/twitter.png"
+                    alt="twitter"></a></figure>
+    </div>
+    <div id="menu"> <!-- Cabecera modo hamburguesa para versión móvil-->
+        <strong onclick="menu();">&#9776;</strong>
+        <ul class="ocultarMenu">
+            <li><a href="../INDEX/Index.html">INICIO</a></li>
+            <li><a href="../INDEX/NoticiasHuertos.html">NOTICIAS</a></li>
+            <li><a href="../INDEX/MapaHuertos.html">MAPA</a></li>
+            <li><a href="../INDEX/ContactoHuertos.html">CONTACTO</a></li>
+            <li onclick="submenu();"><a href="#null">ACTIVIDADES</a>
+                <ul class="ocultarSubMenu">
+                    <li><a href="../INDEX/Material.html">Material</a></li>
+                    <li><a href="#null">Banco de semillas</a></li>
+                    <li><a href="../INDEX/documental.html">Documental</a></li>
+                    <li><a href="../INDEX/Premios.html">Premios</a></li>
+                    <li><a href="../INDEX/juegos.html">Juegos</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <nav> <!-- Cabecera clásica para versión sobremesa-->
+        <ul>
+            <li><a href="../INDEX/Index.html">INICIO</a></li>
+            <li><a href="../INDEX/NoticiasHuertos.html">NOTICIAS</a></li>
+            <li><a href="../INDEX/MapaHuertos.html">MAPA</a></li>
+            <li><a href="../INDEX/ContactoHuertos.html">CONTACTO</a></li>
+            <li><a href="#null">ACTIVIDADES</a>
+                <ul>
+                    <li><a href="../INDEX/Material.html">Material</a></li>
+                    <li><a href="#null">Banco de semillas</a></li>
+                    <li><a href="../INDEX/documental.html">Documental</a></li>
+                    <li><a href="../INDEX/Premios.html">Premios</a></li>
+                    <li><a href="../INDEX/juegos.html">Juegos</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <form autocomplete="off" method="get" id="formAdivina">
+        <h1> ADIVINA EL VEGETAL </h1>
+        <div>
+            <label style="color: rgb(88, 33, 12);" for="a">Escribe el nombre de un vegetal:</label>
+            <input type="text" name="a" id="a" value="">  
+        </div>
+      
+        <div class="carta" id="conteder">
+            <div class="cartaInterna">
+                <div class="anverso" id="anver">
+                    <img src="img/interrogante.png" alt="Anverso de la carta" id="imgint">
+                </div>
+                <div class="anverso reverso" id="rever">
+                    <img src="" alt="Reverso de la carta" id="imgres" class="borde">
+                </div>
+            </div>
+        </div>
+
+        <div id="conteiz">
+            <button type="submit" id="btn"><img src="img/manver1.png" alt="btn" class="btnimg"></button>
+            <button type="reset" id="reini"><img src="img/manro1.png" alt="btn" class="btnimg"></button>
+            <div id="intentos">
+                <h2 id="respu">&nbsp;</h2>
+            </div>
+            
+            <div>
+                <ul id="pista" style="text-align: left;">
+                    <!-- <h2 id="pistatit"></h2> -->
+                </ul>
+            </div>
+        </div>
+       
+        <figure id="figura">
+            <img src="" id="imagen">
+        </figure>    
+    </form>
+<footer>
+    <img class="copae" src="../IMG/LogCOPAE0610/COPAEredux.jpg" alt="copae">
+    <img src="../IMG/LogCOPAE0610/Castellano-horizontal-full-color.png" alt="prinAST">
+    <img src="../IMG/LogCOPAE0610/Caja Rural de Asturias.jpg" alt="cajar">
+    <img src="../IMG/LogCOPAE0610/logo comedores escolares.jpg" alt="come">
+    <img src="../IMG/UE_Hoja.jpg" alt="UE">
+    <p>Copyright 2025. Consejo De La Producción Agraria Ecológica Del Principado De Asturias (COPAE)</p>
+    <p><a href="AvisoLegal.html">Aviso legal</a> | <a href="Privacidad.html">Política de privacidad</a> | <a
+            href="Cookies.html">Política de cookies</a></p>
+    <figure><img id="accesibilidad" src="../IMG/wcag2AAA.png"
+            alt="Icono de conformidad con el Nivel Triple-A, de las Directrices de Accesibilidad para el Contenido Web 1.0 del W3C-WAI">
+    </figure>
+</footer>
+    <script>
+        // let n = parseInt(Math.random() * 5)
+        
+        let contador = 0
+        let intentos = 4
+        let contenido, n, carta, inner, reverso
+        function usar () {
+                if (peticion.readyState == 4 && peticion.status == 200) {
+                    // Recibo el archivo como texto y lo paso a JSON
+                    contenido = JSON.parse(peticion.responseText);
+                    
+                    let b = (contenido.vegetal).length
+                    n = parseInt(Math.random() * b)
+                    console.log(n)
+                    // respu.style.display = 'block';
+                    
+                    pista.style.display = 'block';
+                    // Fuera de tu función comprueba(), al inicio del <script>:
+                    carta = document.querySelector('.carta');          // el contenedor
+                    inner = document.querySelector('.cartaInterna');   // la parte giratoria
+                    reverso = document.getElementById('rever');          // la <div> o <img> del reverso
+                }
+            }
+                 // Crear un objeto global para AJAX
+                let peticion = new XMLHttpRequest      
+                // Construyo el nombre comleto del archivo a traer del servidor
+                let archivo = 'vegetales.json';
+                peticion.open('get', archivo)
+                // Al ser get y sin parametros la envia directa
+                peticion.send(null)
+                // Preparo la peticion de respuesta
+                peticion.onreadystatechange = usar
+                respu.innerHTML = 'Tienes 5 intentos'               
+       
+            function comprueba() {
+               pista.style.display = 'block';
+               respu.style.visibility = 'visible'
+                            if (contador > 3) {
+                                respu.style.backgroundColor = 'red'
+                                respu.style.color = 'white';
+                                respu.style.fontWeight = 'normal'
+                                respu.innerHTML = 'Has agotado el número de intentos'
+                                // Gira la parte interna 180° para mostrar el reverso
+                                inner.style.transform = 'rotateY(180deg)';
+                                // Cambia la imagen del reverso
+                                reverso.querySelector('img').src = contenido.vegetal[n].imagen;
+                            }
+
+                            if (a.value.toLowerCase() == contenido.vegetal[n].nombre && contador <= 4) {
+                                
+                                respu.style.backgroundColor = 'green'
+                                respu.style.color = 'white';
+                                respu.style.fontWeight = 'normal'
+                                if(contador == 1) {
+                                    respu.innerHTML = '¡¡¡ACERTASTE!!! Necesitaste ' + contador + ' intento'
+                                } else {
+                                    respu.innerHTML = '¡¡¡ACERTASTE!!! Necesitaste ' + contador + ' intentos'
+                                }
+                                confetti();
+                                contador = undefined
+                                // Gira la parte interna 180° para mostrar el reverso
+                                inner.style.transform = 'rotateY(180deg)';
+
+                                // Cambia la imagen del reverso
+                                reverso.querySelector('img').src = contenido.vegetal[n].imagen;
+                                document.getElementById('btn').removeEventListener('click', comprueba)
+                            }
+                          
+                            if (contador == 0) {
+                                pista.innerHTML = '<h2 style="text-decoration: underline;">' + 'PISTAS:' + '</h2>'   
+                            }
+
+                            if (a.value != contenido.vegetal[n].nombre && contador <= 3) { 
+                                respu.style.backgroundColor = 'transparent'                          
+                                respu.style.color = 'black'
+                                respu.style.fontWeight = 'bolder'
+                                a.value = ''
+                                // respu.innerHTML = 'Error. Te quedan ' + intentos + ' intentos'  
+                                if (intentos == 1) {
+                                    respu.innerHTML = 'Error. Te queda ' + intentos + ' intento'
+                                } else {
+                                    respu.innerHTML = 'Error. Te quedan ' + intentos + ' intentos'
+                                }                            
+                                intentos--                               
+                                pista.innerHTML += '<li>' + contenido.vegetal[n].pistas[contador] + '</li>'
+                                contador++
+                                console.log(contador)
+                            }                        
+                        }                    
+                    document.getElementById('reini').addEventListener('click', function () {
+                        
+                        const reverso = document.getElementById('rever');
+                        const anverso = document.getElementById('anver');
+                        respu.innerHTML = 'Tienes 5 intentos'
+                        respu.style.backgroundColor = 'transparent';
+                        respu.style.color = 'black';
+                        respu.style.fontWeight = 'bolder';
+                        pista.style.display = 'none';
+                        pista.innerHTML = '<li style="display: none;">' + '' + '</li>'
+                        contador = 0
+                        intentos = 4
+                        // reverso.querySelector('img').src = "img/interrogante.png"
+                        // let b = (contenido.vegetal).length
+                        // n = parseInt(Math.random() * b)
+                        // console.log(n)
+                        // restaurar imágenes: anverso frente = interrogante, reverso vacío
+                        anverso.querySelector('img').src = "img/interrogante.png";
+                        // reverso.querySelector('img').src = "";
+                        // restaurar giro a la posición inicial
+                        inner.style.transform = 'rotateY(0deg)';
+                        // elegir nueva carta
+                        let b = (contenido.vegetal).length;
+                        n = parseInt(Math.random() * b);
+                        console.log('nuevo n:', n);
+                    })         
+            
+                // Para que enter/intro hagan de comprobador
+                const form = document.getElementById('formAdivina');
+                form.addEventListener('submit', function (e) {
+                    e.preventDefault();  // evita recarga de la página
+                    comprueba();         // tu función de verificación
+                });
+            
+                reiniciar = document.getElementById('reini')
+                comprobar = document.getElementById('btn')
+
+                reiniciar.addEventListener('pointerdown', function () {
+                    reini.querySelector('img').src = "img/manro2.png";
+                });
+                reiniciar.addEventListener('pointerup', function () {
+                    reini.querySelector('img').src = "img/manro1.png";
+                });
+
+                comprobar.addEventListener('pointerdown', function () {
+                    btn.querySelector('img').src = "img/manver2.png";
+                });
+                comprobar.addEventListener('pointerup', function () {
+                    btn.querySelector('img').src = "img/manver1.png";
+                });                 
+                
+    </script>
+</body>
+</html>
