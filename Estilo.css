@@ -463,7 +463,7 @@
 
        nav.primary {
            position: fixed;
-           top: calc(48px + 54px);
+           top: calc(6px + 54px);
            /* topbar + header aprox */
            right: 16px;
            left: 16px;
@@ -968,6 +968,7 @@
                  font-size: 2.5vw;
           }
    }
+
 
 
 
