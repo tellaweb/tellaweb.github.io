@@ -1,0 +1,12 @@
+# Archivo robots.txt 
+
+# Permitir a todos los bots rastrear todo el sitio
+User-agent: *
+Disallow:
+
+# Bloquear carpetas internas que no deben indexarse
+Disallow: /PruebaPag/
+
+
+# Indicar la ubicación del sitemap
+Sitemap: https://tellaweb.github.io/sitemap.xml
