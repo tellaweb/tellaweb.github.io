@@ -15,6 +15,7 @@
             /* CSS */
 .carta {
   perspective: 1000px; /* Profundidad 3D */
+  height: 35vw;
 }
 
 .cartaInterna {
@@ -114,7 +115,7 @@ h1 {
     padding-top: 2rem;
 }
 
-#conteiz {
+#conteiz2, #conteder2 {
     width: 50%;
     float: left;
     padding-top: 1rem;
@@ -139,79 +140,151 @@ h1 {
     border: solid black 0.125rem;
 }
 @media(max-width:1380px) {
-    #conteiz {
+    #conteder2 {
         float: none;
         width: 100%;
     }
     #conteder {
-        width: 100%;
+        width: 50%;
     }
     .cartaInterna {
-        width: 35%;
+        width: 85%;
     }
     #btn, #reini {
         float: left;
     }
     #reini {
-        margin-right: 22%;
+        margin-right: 10%;
     }
-    #intentos {
+    /* #intentos {
         float: left;
-        width: 50%;
-        clear: both;
+        width: 60%;
+        
+    } */
+    
+    #conteder2 {
+        float: left;
+        width: 100%;
+    }
+    #conteiz2 {
+        float: right;
+        width: 38%;
+    }
+
+    #a {
+        width: 90%;
+    }
+
+    #pista {
+        margin-left: 1.5rem;
+    }
+
+    form {
+        height: 55rem;
+    }
+      
+}
+
+@media(max-width:600px) {
+    label {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+    form {
+        width: 100%;
+    }
+
+    #btn, #reini {
+        width: 15vw;
+    }
+
+    #conteiz2 {
+        width: 22%;
+        height: 50vw;
+        margin-top: 4rem;
+    }
+
+    .carta, #conteder {
+        width: 75%;
+    }
+
+    #respu {
+        font-size: 1rem;
+    }
+
+    form {
+        height: 45rem;
     }
     
-     
+    
 }
 </style>
 </head>
 
 <body id="conte">   
-    <div id="rrcontent"> <!-- Enlaces a redes sociales-->
-        <figure class="rritem"><a href="https://www.facebook.com/CopaeAsturias/"><img src="../IMG/face.png"
-                    alt="Facebook"></a></figure>
-        <figure class="rritem"><a href="https://www.instagram.com/redhuertoseco/"><img src="../IMG/insta.png"
-                    alt="Instagram"></a></figure>
-        <figure class="rritem"><a href="https://www.youtube.com/channel/UC0lu56DDy68LmGsuYP8skzg"><img
-                    src="../IMG/youtube.png" alt="Youtube"></a></figure>
-        <figure class="rritem"><a href="https://x.com/CopaeAsturias?lang=es"><img src="../IMG/twitter.png"
-                    alt="twitter"></a></figure>
+    <div class="fijo">
+        <div>
+            <div id="rrcontent"> <!-- Enlaces a redes sociales-->
+    
+                <div id="menu"> <!-- Cabecera modo hamburguesa para versión móvil-->
+                    <strong id="menuH">&#9776;</strong>
+                    <ul id="ocultarMenu">
+                        <li><a href="../INDEX/Index.html">INICIO</a></li>
+                        <li><a href="../INDEX/NoticiasHuertos.html">NOTICIAS</a></li>
+                        <li><a href="../INDEX/MapaHuertos.html">MAPA</a></li>
+                        <li><a href="../INDEX/ContactoHuertos.html">CONTACTO</a></li>
+                        <li id="submenuH"><a href="#null">ACTIVIDADES</a>
+                            <ul id="ocultarSubMenu">
+                                <li><a href="../INDEX/Material.html">Material</a></li>
+                                <li><a href="#null">Banco de semillas</a></li>
+                                <li><a href="../INDEX/documental.html">Documental</a></li>
+                                <li><a href="../INDEX/Premios.html">Premios</a></li>
+                                <li><a href="../INDEX/juegos.html">Juegos</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="bloquelogos">
+                    <figure class="rritem"><a href="https://www.facebook.com/CopaeAsturias/"><img src="../IMG/face.png"
+                                alt="Facebook" class="logosrs"></a></figure>
+                    <figure class="rritem"><a href="https://www.instagram.com/redhuertoseco/"><img src="../IMG/insta.png"
+                                alt="Instagram" class="logosrs"></a></figure>
+                    <figure class="rritem"><a href="https://www.youtube.com/channel/UC0lu56DDy68LmGsuYP8skzg"><img
+                                src="../IMG/youtube.png" alt="Youtube" class="logosrs"></a></figure>
+                    <figure class="rritem"><a href="https://x.com/CopaeAsturias?lang=es"><img src="../IMG/twitter.png"
+                                alt="twitter" class="logosrs"></a></figure>
+    
+                    <figure id="inscrip">
+                    <a href="../INDEX/Index.html#inscri"><img src="../IMG/inscri4.png" alt="" id="inscripimg"></a>
+                    <a href="../INDEX/Index.html#inscri"><img src="../IMG/inscridef.png" alt="" id="inscripimg2"></a>
+                    </figure>
+                </div>
+    
+            </div>
+    
+        </div>
+    
+        <nav> <!-- Cabecera clásica para versión sobremesa-->
+            <ul>
+                <li><a href="../INDEX/Index.html">INICIO</a></li>
+                <li><a href="../INDEX/NoticiasHuertos.html">NOTICIAS</a></li>
+                <li><a href="../INDEX/MapaHuertos.html">MAPA</a></li>
+                <li><a href="../INDEX/ContactoHuertos.html">CONTACTO</a></li>
+                <li><a href="#null">ACTIVIDADES</a>
+                    <ul>
+                        <li><a href="../INDEX/Material.html">Material</a></li>
+                        <li><a href="#null">Banco de semillas</a></li>
+                        <li><a href="../INDEX/documental.html">Documental</a></li>
+                        <li><a href="../INDEX/Premios.html">Premios</a></li>
+                        <li><a href="../INDEX/juegos.html">Juegos</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     </div>
-    <div id="menu"> <!-- Cabecera modo hamburguesa para versión móvil-->
-        <strong onclick="menu();">&#9776;</strong>
-        <ul class="ocultarMenu">
-            <li><a href="../INDEX/Index.html">INICIO</a></li>
-            <li><a href="../INDEX/NoticiasHuertos.html">NOTICIAS</a></li>
-            <li><a href="../INDEX/MapaHuertos.html">MAPA</a></li>
-            <li><a href="../INDEX/ContactoHuertos.html">CONTACTO</a></li>
-            <li onclick="submenu();"><a href="#null">ACTIVIDADES</a>
-                <ul class="ocultarSubMenu">
-                    <li><a href="../INDEX/Material.html">Material</a></li>
-                    <li><a href="#null">Banco de semillas</a></li>
-                    <li><a href="../INDEX/documental.html">Documental</a></li>
-                    <li><a href="../INDEX/Premios.html">Premios</a></li>
-                    <li><a href="../INDEX/juegos.html">Juegos</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-    <nav> <!-- Cabecera clásica para versión sobremesa-->
-        <ul>
-            <li><a href="../INDEX/Index.html">INICIO</a></li>
-            <li><a href="../INDEX/NoticiasHuertos.html">NOTICIAS</a></li>
-            <li><a href="../INDEX/MapaHuertos.html">MAPA</a></li>
-            <li><a href="../INDEX/ContactoHuertos.html">CONTACTO</a></li>
-            <li><a href="#null">ACTIVIDADES</a>
-                <ul>
-                    <li><a href="../INDEX/Material.html">Material</a></li>
-                    <li><a href="#null">Banco de semillas</a></li>
-                    <li><a href="../INDEX/documental.html">Documental</a></li>
-                    <li><a href="../INDEX/Premios.html">Premios</a></li>
-                    <li><a href="../INDEX/juegos.html">Juegos</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
 
     <form autocomplete="off" method="get" id="formAdivina">
         <h1> ADIVINA EL VEGETAL </h1>
@@ -231,19 +304,23 @@ h1 {
             </div>
         </div>
 
-        <div id="conteiz">
-            <button type="submit" id="btn"><img src="img/manver1.png" alt="btn" class="btnimg"></button>
-            <button type="reset" id="reini"><img src="img/manro1.png" alt="btn" class="btnimg"></button>
-            <div id="intentos">
-                <h2 id="respu">&nbsp;</h2>
+        <!-- <div id="conteiz"> -->
+            <div id="conteiz2">
+                <button type="submit" id="btn"><img src="img/manver1.png" alt="btn" class="btnimg"></button>
+                <button type="reset" id="reini"><img src="img/manro1.png" alt="btn" class="btnimg"></button>
             </div>
-            
+            <div id="conteder2">
+                <div id="intentos">
+                    <h2 id="respu">&nbsp;</h2>
+                </div>
             <div>
+            
                 <ul id="pista" style="text-align: left;">
                     <!-- <h2 id="pistatit"></h2> -->
                 </ul>
             </div>
-        </div>
+            </div>
+        <!-- </div> -->
        
         <figure id="figura">
             <img src="" id="imagen">
