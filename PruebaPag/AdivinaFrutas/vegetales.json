@@ -1,0 +1,62 @@
+{
+    "vegetal": [
+            {
+                "nombre": "berenjena",
+                "pistas": [
+                    "Verdura.",
+                    "Pertenece a la familia de las solanáceas.",
+                    "Su forma puede ser alargada o más redondeada según la variedad.",
+                    "Morada."
+                ],
+                "imagen": "img/berenjena.png",
+                "solucion": "BERENJENA"
+                                                                
+            },
+
+            {           
+                "nombre": "manzana",
+                "pistas": [
+                    "Fruta.",
+                    "Pertenece a la familia de las rosáceas.",
+                    "Puede ser de diferentes colores: verde, roja, amarilla o bicolor.",
+                    "Se utiliza fresca, en compotas, tartas o bebidas fermentadas."
+                ],
+                "imagen": "img/manzana.png"                             
+            
+            },
+
+            {
+                "nombre": "berza",
+                "pistas": [
+                    "Se siembra en invierno y se recoge en primavera",
+                    "Es redonda y tiene muchas hojas.",
+                    "Es el ingrediente principal de uno de los guisos clásicos asturianos.",
+                    "A más tocín, mayor ....."
+                ],
+                "imagen": "img/berza.png"
+            },
+
+            {
+                "nombre": "calabaza",
+                "pistas": [
+                    "Su color va del naranja intenso al verde pálido, dependiendo de la variedad.",
+                    "Pertenece a la familia de las cucurbitáceas.",
+                    "Tiene una piel gruesa y a menudo rugosa.",
+                    "Es protagonista la noche víspera de todos los santos"
+                ],
+                "imagen": "img/calabaza.png"
+            },
+
+            {
+                "nombre": "arbeyu",
+                "pistas": [
+                    "Es una planta trepadora",
+                    "Es de color verde.",
+                    "En su receta más clásica se sirven con jamón.",
+                    "Al platu vendrás ...... , si nun ye de mozu será de vieyu."
+                ],
+                "imagen": "img/arvejo.png"
+            }
+                    
+    ]
+}
