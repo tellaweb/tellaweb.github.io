@@ -1,0 +1,78 @@
+
+
+/* Propiedades de la caja para cada una de las noticias, por Rubén */
+.caja {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 2em;
+    border: solid, #0a7bb2, 0.5em;
+    border-radius: 2em; /* Da más estética al diseño de los bordes de las cajas para cada noticia, por Rubén */
+    font-size: 0.8em;
+    z-index: 0;
+    
+}
+
+/* Titular para cada Noticia, por Rubén */
+h2 {
+    width: 100%;
+    color: #0a7bb2; /* Color azul claro al Titular para cada Noticia, por Rubén, Martes 5 de Agosto */
+    font-size: 2.5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center; 
+    margin-top: 1em; /* Margen superior para separar el titular en cada noticia, por Rubén, Miércoles 6 de Agosto */ 
+    
+}
+
+#titulonoticia {
+    color: #a21510;
+}
+/* Clase para la fecha de cada noticia, por Rubén  */
+.derecha {
+    text-align: right;
+    height: 1em;
+    line-height: 1em;
+    padding-right: 6em;
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #0a7bb2;
+}
+/* Descripción breve de cada noticia, por Rubén */
+article {
+    width: 70%; /* Agregado en ancho a todas las noticias, por Rubén, Miércoles 6 de Agosto */
+    margin: 2% auto; /*  Margen de separacion superior y centrado en el resto para que entre el contenido de cada noticia, por Rubén, Miércoles 6 de Agosto */
+    font-size: 1.5em;
+    color:#0a7bb2;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+/* Lista con los contenidos de dos talleres/cursos, por Rubén, Martes 5 de Agosto  */ 
+ul {
+    list-style-type: square;
+    margin-left: 1.2em;
+}
+
+/* Marco con márgenes para cada foto de cada noticia, por Rubén */
+.visitas {
+    width: 100%;
+    text-align: center;
+}
+/* Parrafos de cada noticia, por Rubén, Miércoles 13 de Agosto */
+p {
+    font-size: 1em; /* Disminución de la letra a 1em, por Rubén, Miércoles 13 de Agosto */
+}
+/* Propiedades de la imagen 2, por Rubén */
+main img {
+    width: 50%;
+    height: auto;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/* Rebajado el ancho en un 10%, por Rubén, Viernes 8 de Agosto */
+.fotos {
+    width: 40%;    
+}
+
+

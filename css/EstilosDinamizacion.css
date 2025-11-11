@@ -1,0 +1,88 @@
+
+h2 {
+    margin-top: 1.5em;
+    color: #0a7bb2;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.flexionado {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: stretch;
+}
+
+article {
+    background: #0a7bb2;
+    width: 45%;
+    color: white;
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    margin-left: 0.6rem;
+    margin-right: 0.5rem;
+    hyphens: auto;
+}
+
+.dinami1 {
+    height: 15rem;
+}
+
+.dinami2 {
+    height: 22rem;
+}
+
+.dinami3 {
+    height: 15rem;
+}
+
+hr {
+    clear: both;
+    width: 100%;
+}
+span {
+    white-space: nowrap;
+}
+
+#espaciobajo {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+@media (max-width: 1000px) {
+
+    .flexionado {
+        flex-wrap: wrap;
+        margin-left: 0.5em;
+        justify-content: space-around;
+
+    }
+
+    .dinami1 {
+        margin-right: 2vw;
+        height: 22vw;
+    }
+
+    .dinami2 { 
+        height: 22vw;
+    }
+
+    .dinami3 {
+        height: 17vw;
+    }
+
+    article {
+        width: 86%;
+        margin-bottom: 1rem;
+    }
+    p {
+        font-size: 3vw;
+    }
+    
+}

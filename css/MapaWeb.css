@@ -1,0 +1,47 @@
+ 
+ ul {
+     /* Esto define el tipo de viñeta */
+     list-style-type: disc;
+     /* Espacio para que se vea la viñeta */
+     margin-left: 20px;
+     margin: auto;
+     width: 44%;
+ }
+
+ main p {
+     color: black;
+ }
+
+ .mapa {
+     margin-left: 6%;
+     margin-bottom: 2rem;
+     width: 20%;
+ }
+
+ .flexionado {
+     display: flex;
+     flex-wrap: nowrap;
+ }
+
+ .titulo {
+     font-size: 22px;
+     text-shadow: 2px 2px 4px;
+     color: #064260D9;
+     text-decoration: none;
+ }
+
+ @media (max-width: 1000px) {
+     .mapa {
+         width: 60%;
+         margin-top: 6%;
+         margin-left: 20%;
+     }
+
+     .flexionado {
+         flex-wrap: wrap;
+     }
+
+     ul {
+         margin-top: 6%;
+     }
+ }

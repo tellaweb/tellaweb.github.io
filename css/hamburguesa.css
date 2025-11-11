@@ -1,0 +1,50 @@
+#menuhamburguesa {
+    font-size: 2rem;
+    text-align: left;
+    height: 2rem;
+    position: relative;
+    margin-left: 0;
+    display: none;
+    width: 100%;
+}
+
+#menuhamburguesa strong {
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+#menuhamburguesa ul {
+    width: 13rem;
+    display: none;
+}
+
+#menuhamburguesa ul li {
+    list-style: none;
+    width: 100%;
+}
+
+#menuhamburguesa ul li a {
+    text-decoration: none;
+    color: azure;
+    background-color: #0a7bb2;
+    width: 98%;
+    text-align: left;
+    display: block;
+}
+
+#menuhamburguesa ul li a:hover {
+    background-color: #d90b32;
+    color: azure;
+}
+
+
+
+#menuhamburguesa ul li {
+    text-indent: 1rem;
+}
+
+
+.ocultarMenu {
+    display: none;
+    margin: 0%
+}

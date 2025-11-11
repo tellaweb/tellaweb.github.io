@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    color: blue;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.photo-card {
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.photo-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.caption {
+    padding: 10px;
+    text-align: center;
+}
+
+.hidden-text {
+    display: none;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Titulos de Galeria Centrados */
+.gallery-title {
+    background-color: #f4f4f4;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #A21510;
+}
+
+.azul {
+    color: #0a7bb2;
+}
+
+/* flexionado y tamaño Galeria */
+.flex {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 70px;
+}
+
+.justificar {
+    justify-content: center;
+}
+
+.tama {
+    width: 80%;
+
+}
+
+.blanco {
+    color: white;
+}
+
+article {
+    background-color: #0a7bb2;
+}
+
+
+.zoom {
+    width: 600px;
+    transition: transform 0.3s ease;
+}
+
+.zoom:hover {
+    transform: scale(1.2);
+    /* Aumenta al 150% */
+}
+
+
+@media (min-width: 600px) {
+    .photo-card {
+        flex: 1 1 calc(50% - 40px);
+    }
+}
+
+@media (min-width: 900px) {
+    .photo-card {
+        flex: 1 1 calc(33.33% - 40px);
+    }
+}
+
+@media (max-width: 768px) {
+    .flex {
+        display: block;
+        /* o grid, según lo que necesites */
+        margin: auto;
+    }
+
+    .ales {
+        width: 60%;
+    }
+
+    .margen {
+        margin-top: 10%;
+    }
+
+    .zoom {
+        width: 260px;
+    }
+
+}
