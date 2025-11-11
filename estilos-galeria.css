@@ -1,0 +1,291 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #0a2c4f, #0a7bb2);
+    color: white;
+}
+
+
+/* 1ª sección (menú) */
+.encabezado {
+    background-color: rgba(10, 123, 178, 0.9);
+    padding: 20px;
+    text-align: center;
+}
+
+.encabezado h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+p{
+    text-align: center;
+}
+
+/* 2ª sección: primer ejemplo de trabajo */
+.intro-textil {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.intro-textil h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.intro-textil p {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.galeria-textil {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.galeria-textil h2 {
+    font-size: 1.6em;
+    margin-bottom: 30px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.galeria img {
+    width: 100%;
+    max-width: 330px;
+    height: auto;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+.redondo {
+    border-radius: 20px;
+}
+
+.cuadro-redondeado {
+    border-radius: 8px;
+}
+
+/* Seccion Divisoria */
+.interes {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.interes h2 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+}
+
+.interes p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.btn-interes {
+    background-color: #00c2ff;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(10, 123, 178, 0.8);
+    font-size: 0.9em;
+}
+
+/* 1ª sección "B" */
+.franja-transicion {
+    background-color: #ffffff;
+    padding: 60px 20px;
+}
+
+.contenedor-transicion {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.texto-transicion {
+    flex: 1;
+    min-width: 280px;
+}
+
+.texto-transicion h2 {
+    font-size: 1.8em;
+    color: #0a7bb2;
+    margin-bottom: 20px;
+}
+
+.texto-transicion p {
+    font-size: 1.1em;
+    color: #333333;
+    line-height: 1.6;
+}
+
+.imagen-transicion {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+}
+
+.imagen-transicion img {
+    width: 100%;
+    max-width: 400px;
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 1s ease;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Inicio de Galería */
+.galeria-expandida {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.galeria-expandida h2 {
+    font-size: 1.8em;
+    color: #0a7bb2;
+    margin-bottom: 40px;
+}
+
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bloque {
+    background-color: #f5faff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.bloque img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.bloque p {
+    font-size: 1em;
+    color: #333333;
+}
+
+/* Seccion de nuestro equipo */
+
+.equipo {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.equipo h2 {
+    font-size: 1.8em;
+    color: #0a7bb2;
+    margin-bottom: 40px;
+}
+
+.grid-equipo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto 60px;
+}
+
+.persona {
+    background-color: #f5faff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.persona img {
+    width: 100%;
+    max-width: 160px;
+    border-radius: 50%;
+    margin-bottom: 12px;
+}
+
+.persona h3 {
+    font-size: 1.2em;
+    color: #0a7bb2;
+    margin-bottom: 8px;
+}
+
+.persona p {
+    font-size: 1em;
+    color: #333333;
+    line-height: 1.5;
+}
+
+/* Final de pag. Video */
+.video-marco{
+    background-color: white;
+}
+.video-marco h2 {
+    font-size: 1.8em;
+    color: #0a7bb2;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.video-vertical {
+    text-align: center;
+}
+video {
+    max-width: 80%;
+    
+}
+
+.franja-superior {
+    height: 3cm;
+    background: linear-gradient(to bottom, #ffffff, #c5dcf1);
+}
+
+.menu-principal {
+    background-color: #0a7bb2;
+    padding: 12px 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+

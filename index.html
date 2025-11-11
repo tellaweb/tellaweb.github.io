@@ -6,31 +6,14 @@
     <meta name="description" content="Presentamos los resultados de nuestro programa de formación y empleo: participantes, proyectos desarrollados y un impacto positivo en la empleabilidad y el desarrollo local.">
     <title>Taller Empleo LLanera 2024-2025</title>
     <link rel="stylesheet" href="Estilo.css">
- 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+
     </head>
     
     <body>
     
-      <!-- Barra superior 
-      <div class="topbar">
-        <div class="info-contacto">
-          <div class="topbar">
-            <span class="icono-maps">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="white" stroke="black"
-                stroke-width="1.2">
-                <path
-                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
-              </svg>
-            </span>
-            <span>Llanera, Asturias</span>
-          </div>
-          <span>✉️ templeoweb2425@gmail.com</span>
-          
-        </div>
-        
-      </div>
-    
-      Barra inferior / navegación -->
+      <!-- Barra navegación -->
       <header class="main-header">
         <div class="brand">
           <button class="hamburger" aria-label="Menú">☰</button>
@@ -86,8 +69,8 @@
         </div>
         <!-- Controles se añaden por JS -->
       </section>
-    <section class="modulos-lineales">
-      <h2 id="certificados">Certificados Impartidos</h2>
+    <section class="modulos-lineales"id="certificados" >
+      <h2>Certificados Impartidos</h2>
       <p class="cert-sub">Programas oficiales orientados a la inserción laboral de personas mayores de 30 años.</p>
 
       <div class="modulo-linea">
@@ -129,7 +112,7 @@
       <div class="modulo-linea invertido">
         <img src="Fotos/FotoTextil/tex1.jpg" alt="Textil y Piel">
                   <article class="ficha">
-                    <h3>Arreglos y Adaptaciones de Prendas y Artículos en Textil y Piel</h3>
+                    <h3>Arreglos y Adaptaciones de Prendas y Articulos en Textil y Piel</h3>
                     <p>Técnicas de costura, composturas y adaptación a medida.</p>
                     <span class="tag">390 hs</span>
                     <a href="Fichas/TCPF0109_ficha.pdf" target="_blank" class="btn-explorar">Nivel 1</a>
@@ -139,8 +122,8 @@
     </section>
       
       <!-- Estructura de los certificados -->
-      <section class="estructura">
-        <h2>Estructura de los certificados</h2>
+      <section class="orientacion" id="modulos-lineales">
+        <h2 class="estructura">Estructura de los certificados</h2>
         <div class="bloques-modulos">
           <div class="modulo">
             <h3>Fundamentos</h3>
@@ -158,29 +141,54 @@
       </section>
     
       <!-- Actividades destacadas -->
-      <section class="actividades">
-        <h2>¿Qué harás durante tu formación?</h2>
+      <section class="actividades" id="actividades-formativas">
+        <h2>Orientación Laboral</h2>
         <div class="grid-actividades">
+      
           <div class="actividad">
-            <span class="icono-act"></span>
-            <h3>Proyectos reales</h3>
-            <p>Aplicarás lo aprendido en simulaciones y casos prácticos que reflejan entornos laborales reales.</p>
+            <h3>Autoconocimiento y confianza</h3>
+            <p>Programas personalizados para descubrir fortalezas y definir objetivos profesionales con seguridad.</p>
           </div>
+      
           <div class="actividad">
-            <span class="icono-act"></span>
-            <h3>Dinámicas grupales</h3>
-            <p>Trabajarás en equipo, desarrollarás habilidades sociales y aprenderás a liderar con empatía.</p>
+            <h3>Plan de acción profesional</h3>
+            <p>Acompañamos procesos de cambio laboral con estrategias claras y realistas.</p>
           </div>
+      
           <div class="actividad">
-            <span class="icono-act"></span>
-            <h3>Talleres técnicos</h3>
-            <p>Desde diseño gráfico hasta costura profesional, cada certificado incluye formación práctica especializada.</p>
+            <h3>Habilidades clave</h3>
+            <p>Entrenamiento en competencias para la búsqueda activa de empleo y mejora continua.</p>
           </div>
+      
           <div class="actividad">
-            <span class="icono-act"></span>
-            <h3>Orientación laboral</h3>
-            <p>Recibirás apoyo para preparar tu CV, entrevistas y conectar con empresas del sector.</p>
+            <h3>Redes y marca personal</h3>
+            <p>Uso estratégico de LinkedIn y redes sociales para destacar tu propuesta de valor.</p>
           </div>
+      
+          <div class="actividad">
+            <h3>Currículum optimizado</h3>
+            <p>Adaptación del CV a sistemas ATS y mejora con palabras clave relevantes.</p>
+          </div>
+      
+          <div class="actividad">
+            <h3>Entrevistas y networking</h3>
+            <p>Simulaciones, visitas a empresas y conexión con el entorno laboral real.</p>
+          </div>
+      
+        </div>
+      
+        <!-- Galería oculta 1 -->
+        <div id="galeria1" class="galeria-modal">
+          <span class="cerrar" onclick="cerrarGaleria('galeria1')">&times;</span>
+          <img src="Fotos/CONCURSO FOTOGRAFÍA_mockup.jpg" alt="Foto 1">
+          <img src="Fotos/centro.jpg" alt="Foto 2">
+        </div>
+      
+        <!-- Galería oculta 2 -->
+        <div id="galeria1" class="galeria-modal">
+          <span class="cerrar" onclick="cerrarGaleria('galeria1')">&times;</span>
+          <img src="Fotos/diseportada.png" alt="Foto 1">
+          <img src="Fotos/ejer grupo.jpg" alt="Foto 2">
         </div>
       </section>
 
@@ -189,36 +197,32 @@
       <section class="actividades-certificados"  id="actividades-formativas">
         <div class="contenido-actividades">
           <h2>Descubre los trabajos </h2>
-          <p class="subtitulo">Explora lo que se trabaja en cada certificado y cómo se transforma el aprendizaje en
-            experiencia real</p>
+          <p class="subtitulo">Explora lo que se trabaja en cada certificado y cómo se transforma el aprendizaje en experiencia real</p>
       
           <div class="grid-actividades-cert">
             <div class="actividad-cert">           
               <a href="https://www.exconxuraos.es/" target="_blank">
                 <img src="Fotos/Web 2.jpg" alt="Actividades Web">
               </a>
-              <h3>Páginas Web</h3>
-              <p>Diseño de interfaces, maquetación con HTML y CSS, programación básica en JavaScript y publicación en
-                servidores reales.</p>
+              <h3><a href="ActividadesWeb.html" class="decoration">Páginas Web</a></h3>
+              <p>Diseño de interfaces, maquetación con HTML y CSS, programación básica en JavaScript y publicación en servidores reales.</p>
             </div>
             <div class="actividad-cert">
-              <a href="#null">
+              <a href="Galeria Dise.html" target="_blank">
                 <img src="Fotos/CONCURSO FOTOGRAFÍA_mockup.jpg" alt="Actividades Diseño Gráfico">
               </a>              
               <h3>Diseño Gráfico</h3>
-              <p>Creación de logotipos, edición de imágenes, diseño editorial y producción de piezas visuales para medios
-                digitales e impresos.</p>
+              <p>Creación de logotipos, edición de imágenes, diseño editorial y producción de piezas visuales para medios digitales e impresos.</p>
             </div>
             <div class="actividad-cert">
-              <a href="#null">
+              <a href="Galeria Dinami.html" target="_blank">
               <img src="Fotos/Dina/Dina2.jpg" alt="Actividades Tiempo Libre">
               </a>
               <h3>Tiempo Libre</h3>
-              <p>Planificación de juegos, dinámicas grupales, actividades al aire libre y gestión de grupos en contextos
-                educativos.</p>
+              <p>Planificación de juegos, dinámicas grupales, actividades al aire libre y gestión de grupos en contextos educativos.</p>
             </div>
             <div class="actividad-cert">
-              <a href="#null">
+              <a href="GaleriaTextil.html" target="_blank">
               <img src="Fotos/FotoTextil/tex3.jpg" alt="Actividades Textil y Piel"></a>
               <h3>Textil y Piel</h3>
               <p>Arreglos de prendas, composturas, adaptación a medida, técnicas de costura y uso de maquinaria especializada.
@@ -232,8 +236,7 @@
 
       <section class="instalaciones-formativas"  id="instalaciones-formativas">
         <h2>Instalaciones </h2>
-        <p class="subtitulo">Conoce los espacios donde se desarrollan los certificados: modernos, accesibles y pensados para
-          aprender haciendo</p>
+        <p class="subtitulo">Conoce los espacios donde se desarrollan los certificados: modernos, accesibles y pensados para aprender haciendo</p>
       
         <div class="grid-instalaciones">
           <div class="bloque-cert">
@@ -242,8 +245,7 @@
               <img src="Fotos/centro.jpg" alt="Exterior Web">
               <img src="Fotos/Aula1.jpg" alt="Interior Web">
             </div>
-            <p>Aulas equipadas con ordenadores, conexión de alta velocidad y proyectores para trabajar en entornos digitales
-              reales.</p>
+            <p>Aulas equipadas con ordenadores, conexión de alta velocidad y proyectores para trabajar en entornos digitales reales.</p>
           </div>
       
           <div class="bloque-cert">
@@ -268,7 +270,7 @@
             <div class="titulo-cert">Textil y Piel</div>
             <div class="imagenes-cert">
               <img src="Fotos/centro.jpg" alt="Exterior Textil">
-              <img src="Fotos/FotoTextil/Textilinsta.jpg" alt="Interior Textil">
+              <img src="Fotos/FotoTextil/Textilinsta2.jpg" alt="Interior Textil">
             </div>
             <p>Talleres equipados con maquinaria textil, mesas de corte y espacios para prácticas individuales y grupales.</p>
           </div>
@@ -467,11 +469,8 @@
   <div id="nota-legal" class="nota-legal">
     <button id="cerrar-nota" class="cerrar-nota">×</button>
     <p>
-      El objetivo de esta web es visibilizar a nuestro Taller de Empleo, así como servir de práctica real de los
-      conocimientos adquiridos durante la realización del certificado de profesionalidad: <strong>(IFCD0110) Confección y
-        Publicación de Páginas Web</strong>.<br><br>
-      Los contenidos de este sitio web se presentan únicamente a modo de ejemplo de las actividades, salidas y trabajos
-      realizados por el alumnado, sin que implique vínculo ni compromiso alguno por parte del Ayuntamiento de Llanera.
+      El objetivo de esta web es visibilizar a nuestro Taller de Empleo, así como servir de práctica real de los conocimientos adquiridos durante la realización del certificado de profesionalidad: <strong>(IFCD0110) Confección y publicación de páginas web</strong>.<br><br>
+      Los contenidos de este sitio web se presentan únicamente a modo de ejemplo de las actividades, salidas y trabajos realizados por el alumnado, sin que implique vínculo ni compromiso alguno por parte del Ayuntamiento de Llanera.
     </p>
   </div>
 
@@ -492,13 +491,27 @@
         nota.classList.remove('visible');
       });
     });
+
+    function abrirGaleria(id) {
+        document.getElementById(id).style.display = "block";
+      }
+
+      function cerrarGaleria(id) {
+        document.getElementById(id).style.display = "none";
+      }
+
+      function abrirGaleria(id) {
+          document.getElementById(id).style.display = "block";
+        }
+
+        function cerrarGaleria(id) {
+          document.getElementById(id).style.display = "none";
+        }
   </script>
 
 </body>
 
 </html>
-
-
 
 
 

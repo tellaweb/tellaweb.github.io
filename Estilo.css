@@ -157,6 +157,11 @@
        overflow: hidden;
        background: #000;
    }
+   .decoration {
+    text-decoration: none;
+    color: inherit;
+    /* hace que el enlace tome el color del elemento padre. También puedes usar un color específico */
+   }
 
    .slides {
        display: flex;
@@ -271,6 +276,10 @@
    .certificados h2 {
        color: var(--azul);
        margin: 0 0 18px;
+   }
+   .estructura {
+    text-align: center;
+    color: var(--azul);
    }
 
    .cert-sub {
@@ -519,7 +528,7 @@
 
    .actividades h2,
    .estructura h2 {
-       color: var(--azul);
+       color: #0a7bb2;
        margin-bottom: 36px;
    }
 
@@ -968,6 +977,148 @@
           #grande {
                  font-size: 2.5vw;
           }
+   }
+
+   .actividades {
+       padding: 60px 20px;
+       background-color: #f9fcff;
+   }
+
+   .actividades h2 {
+       text-align: center;
+       color: #0a7bb2;
+       font-size: 2em;
+       margin-bottom: 30px;
+   }
+
+   .grid-actividades {
+       display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+       gap: 30px;
+   }
+
+   .actividad {
+       background-color: #ffffff;
+       border-radius: 12px;
+       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+       padding: 20px;
+       text-align: center;
+       transition: transform 0.3s ease;
+   }
+
+   .actividad h3 {
+       color: #0a7bb2;
+       margin-bottom: 10px;
+   }
+
+   .actividad p {
+       color: #333;
+       font-size: 1em;
+       line-height: 1.5;
+   }
+
+   .actividad.clickable {
+       cursor: pointer;
+   }
+
+   .actividad.clickable:hover {
+       transform: scale(1.03);
+   }
+
+   /* Galería modal */
+   .galeria-modal {
+       display: none;
+       position: fixed;
+       z-index: 999;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background-color: rgba(0, 0, 0, 0.8);
+       padding: 40px 20px;
+       overflow-y: auto;
+       text-align: center;
+   }
+
+   .galeria-modal img {
+       max-width: 90%;
+       margin: 20px auto;
+       border-radius: 8px;
+       box-shadow: 0 0 10px #fff;
+   }
+
+   .cerrar {
+       position: absolute;
+       top: 20px;
+       right: 30px;
+       font-size: 30px;
+       color: #fff;
+       cursor: pointer;
+   }
+
+   /* Responsive */
+   @media (max-width: 600px) {
+       .actividad {
+           padding: 15px;
+       }
+
+       .actividad h3 {
+           font-size: 1.1em;
+       }
+
+       .actividad p {
+           font-size: 0.95em;
+       }
+
+       .galeria-modal img {
+           max-width: 100%;
+       }
+   }
+
+   .cerrar {
+       position: absolute;
+       top: 20px;
+       right: 30px;
+       font-size: 30px;
+       color: #fff;
+       cursor: pointer;
+       z-index: 1000;
+   }
+
+   .galeria-modal {
+       display: none;
+       position: fixed;
+       z-index: 9999;
+       /* Asegura que esté por encima del header */
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background-color: rgba(0, 0, 0, 0.9);
+       padding: 40px 20px;
+       overflow-y: auto;
+       text-align: center;
+   }
+
+   .cerrar {
+       position: fixed;
+       top: 20px;
+       right: 30px;
+       font-size: 36px;
+       color: #ffffff;
+       background-color: rgba(0, 0, 0, 0.4);
+       padding: 8px 14px;
+       border-radius: 50%;
+       cursor: pointer;
+       z-index: 10000;
+   }
+
+   .galeria-modal img {
+       max-width: 90%;
+       max-height: 80vh;
+       margin: 20px auto;
+       border-radius: 8px;
+       box-shadow: 0 0 10px #fff;
    }
 
 
