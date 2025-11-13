@@ -868,6 +868,7 @@
 
    .info-footer p {
        margin: 6px 0;
+       text-aling: right;
    }
 
    .info-footer a {
@@ -1120,6 +1121,7 @@
        border-radius: 8px;
        box-shadow: 0 0 10px #fff;
    }
+
 
 
 
