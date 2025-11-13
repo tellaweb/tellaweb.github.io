@@ -44,6 +44,10 @@ h2 {
     margin-top: 10px;
     color: #555;
 }
+.figure {
+    margin: 0;
+    tex-aling: center;
+}
 
 /* Titulos de Galeria Centrados */
 .gallery-title {
@@ -125,5 +129,6 @@ article {
     .zoom {
         width: 260px;
     }
+
 
 }
