@@ -71,7 +71,7 @@ h2 {
 }
 
 .justificar {
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .tama {
@@ -132,3 +132,4 @@ article {
 
 
 }
+
