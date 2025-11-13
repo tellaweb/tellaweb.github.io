@@ -810,6 +810,7 @@
 
    .info-footer p {
        margin: 6px 0;
+       text-align: right;
    }
 
    .info-footer a {
@@ -920,6 +921,7 @@
                  font-size: 2.5vw;
           }
    }
+
 
 
 
