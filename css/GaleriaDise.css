@@ -46,7 +46,7 @@ h2 {
 }
 .figure {
     margin: 0;
-    tex-aling: center;
+    text-align: center;
 }
 
 /* Titulos de Galeria Centrados */
@@ -132,4 +132,5 @@ article {
 
 
 }
+
 
