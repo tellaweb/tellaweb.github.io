@@ -116,6 +116,7 @@ article {
         display: block;
         /* o grid, según lo que necesites */
         margin: auto;
+        text-align: center;
     }
 
     .ales {
@@ -132,5 +133,6 @@ article {
 
 
 }
+
 
 
