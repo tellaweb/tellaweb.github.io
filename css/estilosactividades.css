@@ -1,5 +1,4 @@
 
-
 /* Propiedades de la caja para cada una de las noticias, por Rubén */
 .caja {
     width: 80%;
@@ -54,8 +53,10 @@ ul {
 
 /* Marco con márgenes para cada foto de cada noticia, por Rubén */
 .visitas {
-    width: 100%;
-    text-align: center;
+    width: 70%; /* Rebajado el ancho de cada foto */
+    margin: auto;
+    text-align: center; /* Centrado de todas las fotos */
+    margin-bottom: 1rem; /* Agregado separación entre las imágenes de cada artículo */
 }
 /* Parrafos de cada noticia, por Rubén, Miércoles 13 de Agosto */
 p {
@@ -63,16 +64,38 @@ p {
 }
 /* Propiedades de la imagen 2, por Rubén */
 main img {
-    width: 50%;
+    width: 100%;
     height: auto;
     margin: auto;
-    margin-top: 1em;
-    margin-bottom: 1em;
 }
 
 /* Rebajado el ancho en un 10%, por Rubén, Viernes 8 de Agosto */
 .fotos {
     width: 40%;    
+}
+
+/* Version movil */
+@media (max-width: 768px) {
+
+    #titulonoticia {
+        font-size: 1em;
+    }
+    h2 {
+        font-size: 4vw;
+    }
+    article {
+        font-size: 1em;
+    }
+    .visitas {
+        width: 90%;
+    }
+    .fotos {
+        width: 90%;
+    }
+    .derecha {
+        font-size: 0.8em;
+    }
+ 
 }
 
 
