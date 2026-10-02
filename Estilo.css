@@ -528,7 +528,7 @@
 
    .actividades h2,
    .estructura h2 {
-       color: #0a7bb2;
+       color: #fff;
        margin-bottom: 36px;
    }
 
@@ -1121,6 +1121,3 @@
        border-radius: 8px;
        box-shadow: 0 0 10px #fff;
    }
-
-h2.letrablanca { color: #fff; }
-
